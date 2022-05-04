@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id paciente:</strong>
+  <%= @cita.id_paciente %>
+</p>
+
+<p>
+  <strong>Nombre paciente:</strong>
+  <%= @cita.nombre_paciente %>
+</p>
+
+<p>
+  <strong>Id doctor:</strong>
+  <%= @cita.id_doctor %>
+</p>
+
+<p>
+  <strong>Nombre doctor:</strong>
+  <%= @cita.nombre_doctor %>
+</p>
+
+<p>
+  <strong>Consultorio:</strong>
+  <%= @cita.consultorio %>
+</p>
+
+<p>
+  <strong>Fecha hora:</strong>
+  <%= @cita.fecha_hora %>
+</p>
+
+<%= link_to 'Edit', edit_cita_path(@cita) %> |
+<%= link_to 'Back', cita_path %>
