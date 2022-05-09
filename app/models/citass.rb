@@ -1,0 +1,2 @@
+class Citass < ApplicationRecord
+end
