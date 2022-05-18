@@ -1,4 +1,5 @@
 class CitaController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_cita, only: %i[ show edit update destroy ]
 
   # GET /cita or /cita.json
