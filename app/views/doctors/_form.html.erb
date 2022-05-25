@@ -13,25 +13,26 @@
 
   <div class="field">
     <%= form.label :nombre %>
-    <%= form.text_field :nombre %>
+    <input type="text" name="doctor[nombre]" id="doctor_nombre" class="form-control">
   </div>
 
   <div class="field">
     <%= form.label :especialidad %>
-    <%= form.text_field :especialidad %>
+    <input type="text" name="doctor[especialidad]" id="doctor_especialidad" class="form-control">
   </div>
 
   <div class="field">
     <%= form.label :no_cedula %>
-    <%= form.text_field :no_cedula %>
+    <input type="text" name="doctor[no_cedula]" id="doctor_no_cedula" class="form-control">
   </div>
 
   <div class="field">
     <%= form.label :consultorio %>
-    <%= form.number_field :consultorio %>
+    <input type="number" name="doctor[consultorio]" id="doctor_consultorio" class="form-control">
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <input class="w-100 btn btn-lg btn-primary" type="submit" name="commit" value="Crear Doctor" data-disable-with="Create Doctor">
   </div>
+
 <% end %>

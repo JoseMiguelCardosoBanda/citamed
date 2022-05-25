@@ -1,24 +1,27 @@
 <p id="notice"><%= notice %></p>
+<div class="col-md-5 p-lg-5 mx-auto my-5" style="width: 450px; height: auto">
+  <main class="form-signin w-100 m-auto">
+    <p>
+      <strong>Nombre:</strong>
+      <%= @doctor.nombre %>
+    </p>
 
-<p>
-  <strong>Nombre:</strong>
-  <%= @doctor.nombre %>
-</p>
+    <p>
+      <strong>Especialidad:</strong>
+      <%= @doctor.especialidad %>
+    </p>
 
-<p>
-  <strong>Especialidad:</strong>
-  <%= @doctor.especialidad %>
-</p>
+    <p>
+      <strong>No cedula:</strong>
+      <%= @doctor.no_cedula %>
+    </p>
 
-<p>
-  <strong>No cedula:</strong>
-  <%= @doctor.no_cedula %>
-</p>
+    <p>
+      <strong>Consultorio:</strong>
+      <%= @doctor.consultorio %>
+    </p>
 
-<p>
-  <strong>Consultorio:</strong>
-  <%= @doctor.consultorio %>
-</p>
-
-<%= link_to 'Edit', edit_doctor_path(@doctor) %> |
-<%= link_to 'Back', doctors_path %>
+    <%= link_to 'Edit', edit_doctor_path(@doctor) %> |
+    <%= link_to 'Back', doctors_path %>
+  </main>
+</div>

@@ -1,34 +1,37 @@
 <p id="notice"><%= notice %></p>
+<div class="col-md-5 p-lg-5 mx-auto my-5" style="width: 450px; height: auto">
+  <main class="form-signin w-100 m-auto">
+    <p>
+      <strong>Id paciente:</strong>
+      <%= @cita.id_paciente %>
+    </p>
 
-<p>
-  <strong>Id paciente:</strong>
-  <%= @cita.id_paciente %>
-</p>
+    <p>
+      <strong>Nombre paciente:</strong>
+      <%= @cita.nombre_paciente %>
+    </p>
 
-<p>
-  <strong>Nombre paciente:</strong>
-  <%= @cita.nombre_paciente %>
-</p>
+    <p>
+      <strong>Id doctor:</strong>
+      <%= @cita.id_doctor %>
+    </p>
 
-<p>
-  <strong>Id doctor:</strong>
-  <%= @cita.id_doctor %>
-</p>
+    <p>
+      <strong>Nombre doctor:</strong>
+      <%= @cita.nombre_doctor %>
+    </p>
 
-<p>
-  <strong>Nombre doctor:</strong>
-  <%= @cita.nombre_doctor %>
-</p>
+    <p>
+      <strong>Consultorio:</strong>
+      <%= @cita.consultorio %>
+    </p>
 
-<p>
-  <strong>Consultorio:</strong>
-  <%= @cita.consultorio %>
-</p>
+    <p>
+      <strong>Fecha hora:</strong>
+      <%= @cita.fecha_hora %>
+    </p>
 
-<p>
-  <strong>Fecha hora:</strong>
-  <%= @cita.fecha_hora %>
-</p>
-
-<%= link_to 'Edit', edit_cita_path(@cita) %> |
-<%= link_to 'Back', cita_index_path %>
+    <%= link_to 'Edit', edit_cita_path(@cita) %> |
+    <%= link_to 'Back', cita_index_path %>
+  </main>
+</div>

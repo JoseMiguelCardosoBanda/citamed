@@ -1,5 +1,8 @@
-<h1>New Doctor</h1>
+<div class="col-md-5 p-lg-6 mx-auto my-5" style="width: 450px; height: 400px;">
+  <main class="form-signin w-100 m-auto">
+    <h1 style="text-align: center">New Doctor</h1>
+    <%= render 'form', doctor: @doctor %>
 
-<%= render 'form', doctor: @doctor %>
-
-<%= link_to 'Back', doctors_path %>
+    <%= link_to 'Back', doctors_path %>
+  </main>
+</div>
