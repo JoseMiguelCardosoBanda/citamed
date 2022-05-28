@@ -53,7 +53,7 @@
           <% if !user_signed_in? %>
           <ul class="navbar-nav me-end mb-2 mb-md-0">
             <li class="nav-item">
-              <button type="button" class="btn btn-light btn-sm"><%= link_to "Iniciar Sesión", new_user_session_path %></button>
+              <%= link_to "Iniciar Sesión", new_user_session_path, :class => "btn btn-primary btn-small" %>
             </li>
             <li class="nav-item">
               <button type="button" class="btn btn-warning btn-sm"><%= link_to "Registrarse", new_user_registration_path %></button>
