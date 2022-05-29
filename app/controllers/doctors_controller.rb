@@ -26,7 +26,7 @@ class DoctorsController < ApplicationController
 
     respond_to do |format|
       if @doctor.save
-        format.html { redirect_to doctor_url(@doctor), notice: "Doctor was successfully created." }
+        format.html { redirect_to doctor_url(@doctor), notice: "Doctor creado." }
         format.json { render :show, status: :created, location: @doctor }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -39,7 +39,7 @@ class DoctorsController < ApplicationController
   def update
     respond_to do |format|
       if @doctor.update(doctor_params)
-        format.html { redirect_to doctor_url(@doctor), notice: "Doctor was successfully updated." }
+        format.html { redirect_to doctor_url(@doctor), notice: "Doctor actualizado." }
         format.json { render :show, status: :ok, location: @doctor }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -53,7 +53,7 @@ class DoctorsController < ApplicationController
     @doctor.destroy
 
     respond_to do |format|
-      format.html { redirect_to doctors_url, notice: "Doctor was successfully destroyed." }
+      format.html { redirect_to doctors_url, notice: "Doctor eliminado." }
       format.json { head :no_content }
     end
   end

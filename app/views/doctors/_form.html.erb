@@ -11,28 +11,28 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :nombre %>
-    <input type="text" name="doctor[nombre]" id="doctor_nombre" class="form-control">
+  <div class="form-floating">
+    <input class="form-control" placeholder="nombre" type="text" name="doctor[nombre]" id="doctor_nombre" class="form-control">
+    <label for="floatingInput">Nombre</label>
   </div>
 
-  <div class="field">
-    <%= form.label :especialidad %>
-    <input type="text" name="doctor[especialidad]" id="doctor_especialidad" class="form-control">
+  <div class="form-floating">
+    <input class="form-control" placeholder="especialidad" type="text" name="doctor[especialidad]" id="doctor_especialidad" class="form-control">
+    <label for="floatingInput">Especialidad</label>
   </div>
 
-  <div class="field">
-    <%= form.label :no_cedula %>
-    <input type="text" name="doctor[no_cedula]" id="doctor_no_cedula" class="form-control">
+  <div class="form-floating">
+    <input class="form-control" placeholder="No_cedula" type="text" name="doctor[no_cedula]" id="doctor_no_cedula" class="form-control">
+    <label for="floatingInput">No Cedula</label>
   </div>
 
-  <div class="field">
-    <%= form.label :consultorio %>
-    <input type="number" name="doctor[consultorio]" id="doctor_consultorio" class="form-control">
+  <div class="form-floating">
+    <input class="form-control" placeholder="Consultorio" type="number" name="doctor[consultorio]" id="doctor_consultorio" class="form-control">
+    <label for="floatingInput">Consultorio</label>
   </div>
 
   <div class="actions">
-    <input class="w-100 btn btn-lg btn-primary" type="submit" name="commit" value="Crear Doctor" data-disable-with="Create Doctor">
+    <input class="w-100 btn btn-lg btn-primary" type="submit" name="commit" value="Crear Doctor" data-disable-with="Crear Doctor">
   </div>
 
 <% end %>

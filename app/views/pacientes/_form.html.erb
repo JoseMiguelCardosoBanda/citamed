@@ -11,34 +11,39 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :nombre %>
-    <%= form.text_field :nombre %>
+  <div class="form-floating">
+    <input class="form-control" placeholder="nombre" type="text" name="paciente[nombre]" id="paciente_nombre">
+    <label for="floatingInput">Nombre</label>
   </div>
 
-  <div class="field">
-    <%= form.label :edad %>
-    <%= form.number_field :edad %>
+  <div class="form-floating">
+    <input class="form-control" placeholder="edad" type="number" name="paciente[edad]" id="paciente_edad">
+    <label for="floatingInput">Edad</label>
   </div>
 
-  <div class="field">
-    <%= form.label :num_seguro %>
-    <%= form.text_field :num_seguro %>
+  <div class="form-floating">
+    <input class="form-control" placeholder="num_seguro" type="text" name="paciente[num_seguro]" id="paciente_num_seguro">
+    <label for="floatingInput">Num de Seguro</label>
   </div>
 
-  <div class="field">
-    <%= form.label :direccion %>
-    <%= form.text_field :direccion %>
+  <div class="form-floating">
+    <input class="form-control" placeholder="direccion" type="text" name="paciente[direccion]" id="paciente_direccion">
+    <label for="floatingInput">Direccion</label>
   </div>
 
-  <div class="field">
-    <%= form.label :telefono %>
-    <%= form.text_field :telefono %>
+  <div class="form-floating">
+    <input class="form-control" placeholder="telefono" type="text" name="paciente[telefono]" id="paciente_telefono">
+    <label for="floatingInput">Telefono</label>
   </div>
 
-  <div class="field">
-    <%= form.label :contacto_dos %>
-    <%= form.text_field :contacto_dos %>
+  <div class="form-floating">
+    <input class="form-control" placeholder="s_contacto" type="text" name="paciente[contacto_dos]" id="paciente_contacto_dos">
+    <label for="floatingInput">Segundo Contacto</label>
+  </div>
+
+  <div class="form-floating">
+    <input class="form-control" placeholder="curp" type="text" name="paciente[curp]" id="paciente_curp">
+    <label for="floatingInput">Curp</label>
   </div>
 
   <div class="field">
@@ -46,12 +51,8 @@
     <%= form.date_select :fecha_nacimiento %>
   </div>
 
-  <div class="field">
-    <%= form.label :curp %>
-    <%= form.text_field :curp %>
-  </div>
 
   <div class="actions">
-    <input class="w-100 btn btn-lg btn-primary" type="submit" name="commit" value="Create Paciente" data-disable-with="Create Paciente">
+    <input class="w-100 btn btn-lg btn-primary" type="submit" name="commit" value="Crear Paciente" data-disable-with="Crear Paciente">
   </div>
 <% end %>

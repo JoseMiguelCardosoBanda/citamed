@@ -26,7 +26,7 @@ class CitaController < ApplicationController
 
     respond_to do |format|
       if @cita.save
-        format.html { redirect_to cita_url(@cita), notice: "Cita was successfully created." }
+        format.html { redirect_to cita_url(@cita), notice: "Cita creada." }
         format.json { render :show, status: :created, location: @cita }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -39,7 +39,7 @@ class CitaController < ApplicationController
   def update
     respond_to do |format|
       if @cita.update(cita_params)
-        format.html { redirect_to cita_url(@cita), notice: "Cita was successfully updated." }
+        format.html { redirect_to cita_url(@cita), notice: "Cita actualizada." }
         format.json { render :show, status: :ok, location: @cita }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -53,7 +53,7 @@ class CitaController < ApplicationController
     @cita.destroy
 
     respond_to do |format|
-      format.html { redirect_to cita_index_url, notice: "Cita was successfully destroyed." }
+      format.html { redirect_to cita_index_url, notice: "Cita eliminada." }
       format.json { head :no_content }
     end
   end

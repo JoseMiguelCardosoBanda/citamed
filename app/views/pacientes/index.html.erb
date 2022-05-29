@@ -1,6 +1,5 @@
 <p id="notice"><%= notice %></p>
-<div class="col-md-6 p-lg-8 mx-auto my-5" style="width: 950px; height: 1000px;">
-  <main class="form-signin w-100 m-auto">
+
     <h1 style="text-align: center">Pacientes</h1>
 
     <table class="table table-striped">
@@ -14,7 +13,7 @@
         <th>Contacto dos</th>
         <th>Fecha de nacimiento</th>
         <th>Curp</th>
-        <th colspan="3"></th>
+        <th colspan="4"></th>
       </tr>
       </thead>
 
@@ -29,15 +28,14 @@
           <td><%= paciente.contacto_dos %></td>
           <td><%= paciente.fecha_nacimiento %></td>
           <td><%= paciente.curp %></td>
-          <td><%= link_to 'Show', paciente %></td>
-          <td><%= link_to 'Edit', edit_paciente_path(paciente) %></td>
-          <td><%= link_to 'Destroy', paciente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= link_to 'Ver', paciente, :class => "btn btn-info btn-sm"%></td>
+          <td><%= link_to 'Editar', edit_paciente_path(paciente), :class => "btn btn-light btn-sm" %></td>
+          <td><%= button_to "Eliminar", paciente, method: :delete, :class => "btn btn-danger btn-sm"%></td>
         </tr>
       <% end %>
       </tbody>
     </table>
 
     <br>
-    <%= link_to 'New Paciente', new_paciente_path %>
-  </main>
-</div>
+    <%= link_to 'Nuevo Paciente', new_paciente_path %>
+

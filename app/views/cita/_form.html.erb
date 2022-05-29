@@ -12,29 +12,29 @@
   <% end %>
 
 
-  <div class="field">
-    <%= form.label :id_paciente %>
-    <%= form.number_field :id_paciente %>
+  <div class="form-floating">
+    <input class="form-control" placeholder="cita" type="number" name="cita[id_paciente]" id="cita_id_paciente">
+    <label for="floatingInput">Id Paciente</label>
   </div>
 
-  <div class="field">
-    <%= form.label :nombre_paciente %>
-    <%= form.text_field :nombre_paciente %>
+  <div class="form-floating">
+    <input class="form-control" placeholder="paciente" type="text" name="cita[nombre_paciente]" id="cita_nombre_paciente">
+    <label for="floatingInput">Nombre Paciente</label>
   </div>
 
-  <div class="field">
-    <%= form.label :id_doctor %>
-    <%= form.number_field :id_doctor %>
+  <div class="form-floating">
+    <input class="form-control" placeholder="doctor_id" type="number" name="cita[id_doctor]" id="cita_id_doctor">
+    <label for="floatingInput">Id Doctor</label>
   </div>
 
-  <div class="field">
-    <%= form.label :nombre_doctor %>
-    <%= form.text_field :nombre_doctor %>
+  <div class="form-floating">
+    <input class="form-control" placeholder="doctor" type="text" name="cita[nombre_doctor]" id="cita_nombre_doctor">
+    <label for="floatingInput">Nombre del Doctor</label>
   </div>
 
-  <div class="field">
-    <%= form.label :consultorio %>
-    <%= form.number_field :consultorio %>
+  <div class="form-floating">
+    <input class="form-control" placeholder="consultorio" type="number" name="cita[consultorio]" id="cita_consultorio">
+    <label for="floatingInput">Consultorio</label>
   </div>
 
   <div class="field">
@@ -43,6 +43,6 @@
   </div>
 
   <div class="actions">
-    <input class="w-100 btn btn-lg btn-primary" type="submit" name="commit" value="Create Cita" data-disable-with="Create Cita">
+    <input class="w-100 btn btn-lg btn-primary" type="submit" name="commit" value="Crear Cita" data-disable-with="Crear Cita">
   </div>
 <% end %>

@@ -1,44 +1,37 @@
 <p id="notice"><%= notice %></p>
+<table class="table table-striped table-hover">
+<thead>
+<tr>
+  <th>Nombre</th>
+  <th>Edad</th>
+  <th>Num seguro</th>
+  <th>Direccion</th>
+  <th>Telefono</th>
+  <th>Contacto dos</th>
+  <th>Fecha de nacimiento</th>
+  <th>Curp</th>
 
-<p>
-  <strong>Nombre:</strong>
-  <%= @paciente.nombre %>
-</p>
+</tr>
+</thead>
 
-<p>
-  <strong>Edad:</strong>
-  <%= @paciente.edad %>
-</p>
+<tbody>
+<tr>
+  <td><%= @paciente.nombre %></td>
+  <td><%= @paciente.edad %></td>
+  <td><%= @paciente.num_seguro %></td>
+  <td><%= @paciente.direccion %></td>
+  <td><%= @paciente.telefono %></td>
+  <td><%= @paciente.contacto_dos %></td>
+  <td><%= @paciente.fecha_nacimiento %></td>
+  <td><%= @paciente.curp %></td>
 
-<p>
-  <strong>Num seguro:</strong>
-  <%= @paciente.num_seguro %>
-</p>
+</tr>
+</tbody>
+</table>
 
-<p>
-  <strong>Direccion:</strong>
-  <%= @paciente.direccion %>
-</p>
+</tr>
+</thead>
 
-<p>
-  <strong>Telefono:</strong>
-  <%= @paciente.telefono %>
-</p>
 
-<p>
-  <strong>Contacto dos:</strong>
-  <%= @paciente.contacto_dos %>
-</p>
-
-<p>
-  <strong>Fecha nacimiento:</strong>
-  <%= @paciente.fecha_nacimiento %>
-</p>
-
-<p>
-  <strong>Curp:</strong>
-  <%= @paciente.curp %>
-</p>
-
-<%= link_to 'Edit', edit_paciente_path(@paciente) %> |
-<%= link_to 'Back', pacientes_path %>
+<%= link_to 'Editar', edit_paciente_path(@paciente) %> |
+<%= link_to 'Regresar', pacientes_path %>

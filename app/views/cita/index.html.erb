@@ -1,6 +1,5 @@
 <p id="notice"><%= notice %></p>
-<div class="col-md-6 p-lg-8 mx-auto my-5" style="width: 750px; height: 1000px;">
-  <main class="form-signin w-100 m-auto">
+
     <h1 style="text-align: center">Cita</h1>
 
     <table class="table table-striped">
@@ -25,15 +24,14 @@
           <td><%= cita.nombre_doctor %></td>
           <td><%= cita.consultorio %></td>
           <td><%= cita.fecha_hora %></td>
-          <td><%= link_to 'Show', cita %></td>
-          <td><%= link_to 'Edit', edit_cita_path(cita) %></td>
-          <td><%= link_to 'Destroy', cita, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><%= link_to 'Ver', cita, :class => "btn btn-info btn-sm" %></td>
+          <td><%= link_to 'Editar', edit_cita_path(cita), :class => "btn btn-light btn-sm" %></td>
+          <td><%= button_to "Eliminar", cita, method: :delete, :class => "btn btn-danger btn-sm"%></td>
         </tr>
       <% end %>
       </tbody>
     </table>
 
     <br>
-    <%= link_to 'New Cita', new_cita_path %>
-  </main>
-</div>
+    <%= link_to 'Nueva Cita', new_cita_path %>
+
